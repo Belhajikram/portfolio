@@ -4,3 +4,13 @@ function toggleMenu(){
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+
+window.addEventListener('scroll', function() {
+    var scrollButton = document.querySelector('.scroll-to-top');
+    if (window.scrollY > 300) {
+      scrollButton.classList.add('show');
+    } else {
+      scrollButton.classList.remove('show');
+    }
+  });
