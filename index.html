@@ -57,10 +57,9 @@
             I'm <span>Ikram<br />a</span> Web Developer
           </h1>
           <p class="description">
-            Welcome to my web developer portfolio! I'm Ikram, a skilled and
-            creative web developer with a passion for creating beautiful,
-            responsive, and user-friendly websites. I've worked on a variety of
-            web projects, ranging from personal blogs e-commerce platforms.
+            Welcome to my web developer portfolio! I'm Ikram, a dedicated web
+            developer driven by a passion for crafting visually stunning,
+            responsive, and intuitive websites.
           </p>
           <div class="action_btns">
             <button
@@ -98,11 +97,7 @@
       <h1 class="title1">About Me</h1>
       <div class="section-container">
         <div class="pic_container">
-          <img
-            src="/assets/pic.jpg"
-            alt="Profile picture"
-            class="about_pic"
-          />
+          <img src="/assets/pic.jpg" alt="Profile picture" class="about_pic" />
         </div>
         <div class="about-details">
           <div class="about-containers">
@@ -126,14 +121,14 @@
             </div>
           </div>
           <div class="text-container">
-            <p>
+            <p id="highlighted-text">
               After two years of studying computer engineering at the High
               School of Technology, I undertook two internships. The first was
               at Fantasia, a Moroccan Packaging Company based in Agadir, and the
               second was at a web services agency in Laayoune. During the latter
               internship, I played a significant role in the development of the
               agency's website, where we specialized in designing and creating
-              custom websites to meet our clients' specific requirements
+              custom websites to meet our clients specific requirements
             </p>
           </div>
         </div>
@@ -286,11 +281,7 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="/assets/lvs.jpeg"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="/assets/lvs.jpeg" alt="Project 1" class="project-img" />
             </div>
             <h2 class="sub-title1">Lvs</h2>
             <div class="btn-container">
@@ -326,7 +317,7 @@
               </button> -->
               <button
                 class="contact project-btn"
-                onclick="location.href='https://soubdrive.com/en/home/'"
+                onclick="window.open('https://soubdrive.com/en/home/', '_blank')"
               >
                 Go explore
               </button>
@@ -340,7 +331,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="sub-title1">SH web services</h2>
+            <h2 class="sub-title1">SH Web Services</h2>
             <div class="btn-container">
               <!-- <button
                 class="contact project-btn"
@@ -366,26 +357,59 @@
       />
     </section>
     <section id="contact">
-      <p class="text_p1">Get in Touch</p>
-      <h1 class="title1">Contact Me</h1>
-      <div class="contact-info-up-container">
-        <div class="contact-info-container">
-          <img
-            src="/assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:example@gmail.com">ikrambelhaj19@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="/assets/linkedin.png"
-            alt="Linkedin icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      <div class="contact-info">
+        <h2 class="contact-heading">Get in Touch</h2>
+        <p class="contact-text">
+          Feel free to contact us for any questions or inquiries!
+        </p>
+        <div class="contact-details">
+          <div class="contact-info-up-container">
+            <div class="contact-info-container">
+              <img
+                src="/assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p>
+                <a id="emailLink" href="mailto:example@gmail.com"
+                  >ikrambelhaj19@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="/assets/linkedin.png"
+                alt="Linkedin icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+          </div>
         </div>
       </div>
+      <form id="contact-form" class="contact-form">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
     <footer>
       <nav>
